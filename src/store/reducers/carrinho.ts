@@ -27,7 +27,8 @@ const carrinhoSlice = createSlice({
       //SE O JOGO JA TIVER NO ARRAY DE ESTADO DA O ALERTA
       if (state.itens.find((game) => game.id === jogo.id)) {
         alert('Item já adicionado')
-        //SE NÃO TIVER DA UM PUSH
+        //SE NÃO TIVER DA UM PUSH (QUE SÓ É POSSÍVEL POR CAUSA DO
+        //WRITABLEDRAFT )
       } else {
         state.itens.push(jogo)
       }
